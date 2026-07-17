@@ -114,7 +114,7 @@ Feature files follow the semicolon-delimited IS17 CSV format produced by
 [openSMILE](https://www.audeering.com/research/opensmile/). Data is **not
 included** in this repository. See the
 [CreativeIT dataset page](https://sail.usc.edu/CreativeIT/ImprovDatabase.htm)
-for access.
+for access or email author for working dataset. 
 
 ---
 
