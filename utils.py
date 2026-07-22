@@ -89,11 +89,11 @@ def savitzky_golay(
     half_window  = (window_size - 1) // 2
 
     # Precompute Savitzky-Golay coefficients
-    b = np.mat([
+    b = np.asarray([
         [k ** i for i in order_range]
         for k in range(-half_window, half_window + 1)
     ])
-    m = np.linalg.pinv(b).A[deriv] * rate ** deriv * factorial(deriv)
+    m = np.linalg.pinv(b)[deriv] * rate ** deriv * factorial(deriv)
 
     # Pad signal at the extremes with reflected values
     firstvals = y[0] - np.abs(y[1:half_window + 1][::-1] - y[0])

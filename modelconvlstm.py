@@ -110,7 +110,7 @@ def get_model_n2(
 
     model.add(ConvLSTM2D(
         16, kernel_size=(1, 21), padding="same",
-        input_shape=(None, temporal_batch_size, n_features, 1),
+        input_shape=(1, temporal_batch_size, n_features, 1),
         return_sequences=True, activation="tanh",
         name="convlstm1",
     ))
